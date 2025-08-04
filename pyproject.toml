@@ -1,0 +1,18 @@
+[project]
+name = "arduino-pixhawk-testing-tool"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "yash chauhan",email = "yashc9411407582@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pymavlink (>=2.4.49,<3.0.0)",
+    "ruff (>=0.12.7,<0.13.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
