@@ -77,7 +77,9 @@ cd ~/Desktop/ardupilot/ArduCopter
 
 source ~/venv-ardupilot/bin/activate
 && cd ~/Desktop/ardupilot
-Tools/autotest/sim_vehicle.py -v ArduCopter -f quad --console --map --out=127.0.0.1:14551 --out=/dev/ttyACM0,57600
+Tools/autotest/sim_vehicle.py -v ArduCopter -f quad --console --map \
+  --out=127.0.0.1:14551 \
+  --out=127.0.0.1:14555 --out=/dev/ttyACM0,57600
 
 sim_vehicle.py -f quadplane --console --map  --out=127.0.0.1:14551
 param set ARMING_CHECK 0
